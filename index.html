@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dan Coxon - Online Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <link href="style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="smoothscroll.js/smoothscroll.js"></script>
+  <link rel="shortcut icon" type="image/png" href="img/meResized.jpg"/>
+</head>
+
+<body id="top">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="navigationTest">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#alignment-example"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#top" class="navbar-brand smoothScroll">Dan Coxon</a>
+      </div>
+      <div class="collapse navbar-collapse" id="alignment-example">
+        <ul class="nav navbar-nav">
+          <li><a href="#top" class="smoothScroll">Home</a></li>
+          <li><a href="#about" class="smoothScroll">About</a></li>
+          <li><a href="#college" class="smoothScroll">College</a></li>
+        </ul>
+
+        <form target="_blank" class="navbar-form navbar-right" role="search" action="http://www.google.com/search" method="GET">
+          <div class="form-group">
+            <!-- <input type="text" class="form-control"> -->
+            <input type="hidden" name="sitesearch" value=""/>
+            <input type="text" name="q" size="31" maxlength="255" value=""/>
+          </div>
+          <button type="submit" class="btn btn-info">Google Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div id="home">
+    <div class="landing-text">
+      <img class="animated fadeInDown" src="img/meResized.jpg" alt="Dan Coxon's Profile Picture">
+      <h1 class="animated fadeInDown gradient-text">Dan Coxon</h1>
+      <!-- <h3>Bachelor of Science (Honours) in Computing with Information Management</h3> -->
+      <!-- <h3>Student // Designer // Developer</h3> -->
+      <h3 class="animated slideInUp">IT Management // Undergraduate</h3>
+      <div class="cv-button">
+        <a target="_blank" href="DanielCoxonCV.pdf" class="btn btn-info btn-md">Download CV</a>
+      </div>
+
+      <div class="contact">
+        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Contact Me</button>
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title">Contact Me</h2>
+              </div>
+              <div class="modal-body">
+                <form role="form" method="post" id="reused_form">
+                  <p> Send your message in the form below and I will get back to you as soon as possible. </p>
+                  <div class="form-group">
+                    <label for="name"> Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                  </div>
+                  <div class="form-group">
+                    <label for="email"> Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                  </div>
+                  <div class="form-group">
+                    <label for="name"> Message:</label>
+                    <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here"
+                      maxlength="6000" rows="7"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-info btn-block" id="btnContactUs">Send &rarr;</button>
+                </form>
+                <div id="success_message" style="width:100%; height:100%; display:none; ">
+                  <h3>Sent your message successfully!</h3>
+                </div>
+                <div id="error_message" style="width:100%; height:100%; display:none; ">
+                  <h3>Error</h3> Sorry there was an error sending your form.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="padding" id="about">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-12 text-center">
+          <h2 class="animated slideInUp">About Me</h2>
+          <p class="lead">My name is Dan Coxon and I am currently a 4th-year 'Computing with IT Management' student in
+            the Institute of Technology Tallaght. I am ambitious in the area of UX/UI Design and Web Development. Some
+            of the subjects I have studied in my time in IT Tallaght are Software Development, using languages such as
+            Java, Database Fundamentals, Operating Systems Fundamentals, Object-Oriented Systems Analysis, Social Media
+            Communications, Statistics and Web Design & Development.</p>
+
+          <div class="dropdown">
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#drop1">Work Placement</button>
+            <div id="drop1" class="collapse">
+              <h2 class="animated slideInUp">Work Placement</h2>
+              <a target="_blank" href="https://graphicmint.com/">
+                <img src="img/gm.jpg">
+              </a>
+              <p class="lead animated slideInLeft">As part of 3rd-Year semester 6, I completed a 6 month internship from January 29th 2018 - July 20th 2018, at <a
+                  target="_blank" href="https://graphicmint.com/">Graphic Mint</a>, an award winning UX/UI Design
+                agency in Dublin. Some of the roles and responsibilities I had as part of this internship included Website Development support,
+                Content Stratagies and Digital Marketing.</p>
+            </div>
+          </div>
+
+          <div class="dropdown2">
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#drop2">My Interests</button>
+            <div id="drop2" class="collapse">
+              <h2 class="animated fadeIn">My Interests</h2>
+              <img src="img/memusic.jpg">
+              <p class="lead animated slideInRight">My interests include science and technology, photography &
+                videography and also music. I am a fully self-taught musician and my current part-time job is playing
+                in a live cover band in venues all over Dublin. I play a variety of instruments but my two main instruments are
+                the piano and the guitar. I am also a song-writer and have been performing for large audiences since
+                2011.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="skills">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 col-xs-12">
+          <h2>Soft Skills</h2>
+          
+          <div class="well well-lg">
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                aria-valuemax="100" style="width:95%">
+                Team Work - 95%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                aria-valuemax="100" style="width:90%">
+                Communication - 90%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" style="width:80%">
+                Problem Solving - 80%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100" style="width:100%">
+                Work Ethic - 100%
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <h2>Technical Skills</h2>
+          <div class="well well-lg">
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                aria-valuemax="100" style="width:85%">
+                Web Development - 85%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                aria-valuemax="100" style="width:90%">
+                Bootstrap - 90%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" style="width:80%">
+                Java - 80%
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                aria-valuemax="100" style="width:75%">
+                CSS - 75%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="fixed">
+    <div>
+      <!--Background Image-->
+    </div>
+    <div class="fixed-text">
+        <h1>College</h1>
+        <h3>College Results // Education // Work Examples</h3>
+    </div>
+  </div>
+
+
+  <div class="results" id="college">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+      <div class="container">
+        <h2>College Results</h2>
+        <!-- <div class="well well-lg"> -->
+
+        <ul class="nav nav-pills nav-justified">
+          <li class="active"><a data-toggle="pill" href="#menu1">4th Year</a></li>
+          <li><a data-toggle="pill" href="#menu2">3rd Year</a></li>
+          <li><a data-toggle="pill" href="#menu3">2nd Year</a></li>
+          <li><a data-toggle="pill" href="#menu4">1st Year</a></li>
+        </ul>
+        <!--4th Year-->
+        <div class="tab-content">
+          <div id="menu1" class="tab-pane active">
+            <h3>4th Year</h3>
+            <table class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Semester 7</th>
+                  <th scope="col">Grade</th>
+                  <th scope="col">Semester 8</th>
+                  <th scope="col">Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Interactive Media Design & Visualisation</th>
+                  <td>B</td>
+                  <th scope="row">Operations Research</th>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">Social Media Analysis</th>
+                  <td>B+</td>
+                  <th scope="row">IT Governance and Quality</th>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">Private Cloud Architecture</th>
+                  <td>B-</td>
+                  <th scope="row">E-Learning</th>
+                  <td>B+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Security for Cloud and Iot</th>
+                  <td>C+</td>
+                  <th scope="row">Advanced Cloud Provisioning and Networking</th>
+                  <td>C+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Enterprise Performance Architecture</th>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">Information Management</th>
+                  <td>B+</td>
+                </tr>
+                <tr>
+                  <th scope="row">4th Year Project</th>
+                  <td>B</td>
+                  <th style="color:#17a2b8"  scope="row">4th Year GPA</th>
+                  <td style="color:#17a2b8"><b>3.02</b></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--3rd Year-->
+          <div id="menu2" class="tab-pane fade">
+            <h3>3rd Year</h3>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Semester 5</th>
+                  <th scope="col">Grade</th>
+                  <th scope="col">Semester 6</th>
+                  <th scope="col">Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Cloud Services & Distributed Computing</th>
+                  <td>B</td>
+                  <th scope="row">Experiential Learning (Work Placement)</th>
+                  <td>PS</td>
+                </tr>
+                <tr>
+                  <th scope="row">Innovation & Entrepeurship</th>
+                  <td>C+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Networking 3</th>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">Advanced Databases</th>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">Web Application Development</th>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">Operating Systems</th>
+                  <td>C</td>
+                  <th style="color:#17a2b8" scope="row">3rd Year GPA</th>
+                  <td style="color:#17a2b8"><b>2.30</b></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--2nd Year-->
+          <div id="menu3" class="tab-pane fade">
+            <h3>2nd Year</h3>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Semester 3</th>
+                  <th scope="col">Grade</th>
+                  <th scope="col">Semester 4</th>
+                  <th scope="col">Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Software Development 3</th>
+                  <td>C+</td>
+                  <th scope="row">Software Development 4</th>
+                  <td>C+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Software Quality Assurance & Testing</th>
+                  <td>B</td>
+                  <th scope="row">Information Security</th>
+                  <td>B+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Networking 1</th>
+                  <td>B</td>
+                  <th scope="row">Networking 2</th>
+                  <td>C+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Database Design & Programming</th>
+                  <td>C</td>
+                  <th scope="row">Management Science</th>
+                  <td>C+</td>
+                </tr>
+                <tr>
+                  <th scope="row">Discrete Mathematics 2</th>
+                  <td>A</td>
+                  <th scope="row">Object Oriented Systems Analysis</th>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">Web & Mobile Design & Development</th>
+                  <td>B+</td>
+                  <th scope="row">2nd Year Project</th>
+                  <td>C+</td>
+                  <th style="color:#17a2b8" scope="row">2nd Year GPA</th>
+                  <td style="color:#17a2b8"><b>2.88</b></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--1st Year-->
+          <div id="menu4" class="tab-pane fade">
+            <h3>1st Year</h3>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Semester 1</th>
+                  <th scope="col">Grade</th>
+                  <th scope="col">Semester 2</th>
+                  <th scope="col">Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Software Development 1</th>
+                  <td>B+</td>
+                  <th scope="row">Software Development 2</th>
+                  <td>B+</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Computer Architecture</th>
+                  <td>B-</td>
+                  <th scope="row">Operating Systems Fundamentals</th>
+                  <td>B</td>
+                </tr>
+                <tr>
+
+                  <th scope="row">Fundamentals of Interface and Web Design</th>
+                  <td>B-</td>
+                  <th scope="row">Object Oriented Systems Analysis</th>
+                  <td>A</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Business Information Systems</th>
+                  <td>B+</td>
+                  <th scope="row">Social Media Communications</th>
+                  <td>B</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Discrete Mathematics 1</th>
+                  <td>B+</td>
+                  <th scope="row">Statistics</th>
+                  <td>C</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Learning To Learn at 3rd Level</th>
+                  <td>B+</td>
+                  <th scope="row">Database Fundamentals</th>
+                  <td>B</td>
+                  <th style="color:#17a2b8" scope="row">1st Year GPA</th>
+                  <td style="color:#17a2b8"><b>3.21</b></td>
+                </tr>
+
+                <!--Semester 2-->
+
+                <tr>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+
+
+  <div class="education">
+    <div class="row">
+      <div class="col-lg-6 col-xs-12">
+        <h2>Education Timeline</h2>
+        <ul class="timeline">
+          <li>
+            <a href="#myModal2" data-toggle="modal" data-target="#myModal2"><b>Intistute of Technology Tallaght 2015 -
+                2019</b></a>
+            <!-- Modal -->
+            <div id="myModal2" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">Institute of Technology Tallaght</h2>
+                  </div>
+                  <div class="modal-body">
+                    <img class="animated fadeIn" src="img/itt.jpg" alt="ITT Logo">
+                    <h2 class="animated fadeIn">Projects</h2>
+                    <p class="animated fadeIn">During my time in the Institute of Technology Tallaght, I have worked on
+                      many interesting projects and assignments. All of which varied in specification and deliverable.
+                      I worked on multiple group projects during the course which increased my team work and
+                      communication skills greatly. I found this to be of great benefit when carrying out my work
+                      placement in Graphic Mint.</p>
+                      <p class="animated fadeIn">As part of the 3rd Work Placement, I was tasked with completing a
+                        project that was related to the area of work that I was employed in. As a result of this, I
+                        carried out my project in the area of <b>UX Design.</b> The title of my project was <b>The
+                          Study, Evaluation & Comparison of Modern Website Design and Development Strategies including
+                          that of Graphic Mint.</b>You can dowload my project below for further reading.</p>
+                      <div class="project-button">
+                        <a target="_blank" href="3rd-Year Project.pdf" class="btn btn-success btn-md" id="project">Download
+                          Project</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>I have completed a Bachelor of Science (Honours) in Computing with IT Management over the course of 4
+              years in the Institute of Technology Tallaght.</p>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p> -->
+          </li>
+          <li>
+            <!-- <a target="_blank" href="https://www.bcfe.ie/courses/hnd-in-contemporary-music-performance-rock-school/">Ballyfermot College of Further Education 2013 - 2015</a> -->
+            <a href="myModal3" data-toggle="modal" data-target="#myModal3"><b>Ballyfermot College of Further Education
+                2013 - 2015</b></a>
+            <!-- Modal -->
+            <div id="myModal3" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">Ballyfermot College of Further Education</h2>
+                  </div>
+                  <div class="modal-body">
+                    <img class="animated fadeIn" src="img/BCFE-LOGO.jpg" alt="BCFE Logo">
+                    <h2 class="animated fadeIn">Higher National Diploma</h2>
+                    <p class="animated fadeIn">I received a Higher National Diploma from BCFE in 2013. The course I completed was called 'Contemporary
+                      Music Performance (Rock School)'. This course was a great experience and I learned so much from it. It helped to build my confidence as I would regularly be performing for large crowds. I feel I have carried this forward with me into the world of computing as I am now very comfortable when it comes to presentations at work or for college presentations in front of peers and teaching staff. You can view my Diploma below.</p>
+
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#drop7">View
+                          Diploma</button>
+                        <div id="drop7" class="collapse">
+                          <h4 class="animated fadeIn"><b>HND in Contemporary Music Performance</b></h4>
+                          <img src="img/diploma.jpg">
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>I received a Higher National Diploma from BCFE in 2013. The course I completed was called 'Contemporary
+              Music Performance (Rock School)'.</p>
+          </li>
+          <li>
+            <!-- <a target="_blank" href="http://www.hfcs.ie/">Holy Family Community School, Rathcoole 2007 - 2013</a> -->
+            <a href="myModal4" data-toggle="modal" data-target="#myModal4"><b>Holy Family Community School 2007 - 2013</b></a>
+            <!-- Modal -->
+            <div id="myModal4" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">Holy Family Community School</h2>
+                  </div>
+                  <div class="modal-body">
+                    <img class="animated fadeIn" src="img/hfcs.png" alt="HFCS Logo">
+                    <h2 class="animated fadeIn">Secondary School</h2>
+                    <p class="animated fadeIn">During my time in Holy Family Community School, I was fortunate enough
+                      to achieve an Academic Exellence Award for Music. This is something I am greatly proud of as
+                      there was only one award given out per student for each subject.</h2>
+
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#drop6">View
+                          Award</button>
+                        <div id="drop6" class="collapse">
+                          <h4 class="animated fadeIn"><b>Academic Exellence in Music Award</b></h4>
+                          <img src="img/award.jpg">
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>I attended HFCS Rathcoole for 6 years. I learned so much during my time here and developed a lot of the
+              skills that I still utilise to this day. I also completed Transition Year which I found to be of huge
+              benefit and helped me to develop social and team building skills.</p>
+          </li>
+          <li>
+              <a href="#myModal5" data-toggle="modal" data-target="#myModal5"><b>Extracurricular: Clondalkin Localise Youth Group - 2007 - 2011</b></a>
+              <!-- Modal -->
+              <div id="myModal5" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h2 class="modal-title">Clondalkin Localise</h2>
+                    </div>
+                    <div class="modal-body">
+                      <img class="animated fadeIn" src="img/localise.jpg" alt="Localise Logo">
+                      <h2 class="animated fadeIn">Activities</h2>
+                      <p class="animated fadeIn">As a member of localise we did a lot of community work in the Clondalkin area. For example, cleaning the grounds of the local church every Saturday morning. We also held events at holiday seasons throughout the year. At Christmas we would visit the patients in Peamount hospital and sing Christmas carols with them and at Easter we would bring them decorations that they could hang in the bedrooms.</p>
+                      <p class="animated fadeIn">We also went on many weekend trips during my time in the group. We went to places such as Glendalough and Anglesea in Wales. On these trips we would conduct various team building exercises that helped us all grow as induviduals from a young age.</p>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>During my teenage years I was a member of a Community Youth Group called 'Localise'. The mantra of the group was 'Caring in the Community' and we carried out many activites that were aimed at giving help to the less fortunate within the community.</p>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p> -->
+            </li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-xs-12">
+              <h2>My Work in Graphic Mint</h2>
+
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+              
+                <!-- Wrapper for slides -->
+
+                <div class="carousel-inner">
+
+                    <div class="item active">
+                        <img src="img/gmhome.PNG" class="img-fluid" alt="Graphicmint.ie">
+                        <div class="carousel-caption">
+                          <h3>Graphicmint.com</h3>
+                          <p class="lead">My Role: UX Design & Photography</p>
+                          <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#GMModal">Read More</button>
+                        </div>
+                      </div>
+    
+                      <div id="GMModal" class="modal fade" role="dialog">
+                          <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h2 class="modal-title">Graphic Mint</h2>
+                              </div>
+                              <div class="modal-body">
+                                <img class="animated fadeIn" src="img/gmhome.PNG" alt="Graphicmint.ie">
+                                <h2 class="animated fadeIn">My Roles</h2>
+                                <h5 class="animated fadeIn"><b>Website Updates</b></h5>
+                                <p class="animated fadeIn">Graphic Mint <a target="_blank" href="https://graphicmint.com/">(graphicmint.ie)</a> is the main website for the UX Design agency I worked for as part of my 3rd-Year work placement. During my 6 months working there, this website saw multiple updates that I was involved with. At the beginning of my placement, myself and two other student interns were tasked with carrying out an Heuristic Evaluation of this website. The results of which could be used to carry out any potential updates to the website.</p>
+                                <h5 class="animated fadeIn"><b>Marketing Communications (MarComms)</b></h5>
+                                <p class="animated fadeIn">MarComms was a large responsibility of mine during my internship. This role consisted of the sourcing and scheduling of all social media content across all of Graphic Mint's social channels including <a target="_blank" href="https://twitter.com/graphic_mint">Twitter</a>, <a target="_blank" href="https://facebook.com/graphicmint">Facebook</a>, <a target="_blank" href="https://www.linkedin.com/company/graphic-mint/">LinkedIn</a> and <a target="_blank" href="https://plus.google.com/116801234347174627850">Google+</a>. At the end of each month I then had to complete a variety of reports detailing the analytics from each social media platform and each of Graphic Mint's websites and then carry out a presentation in which these metrics would be discussed. Plans would then be set in place for any changes that needed to be made to the marketing strategy based on the month's performance. Other roles and responsibilities I had during my time in Graphic Mint included <a target="_blank" href="https://graphicmint.com/blog/social-media-business/">Blog Writing</a>, Blog editing and the creation of quarterly newsletters.</p>
+                                <h5 class="animated fadeIn"><b>Photography</b></h5>
+                                <p class="animated fadeIn">A large project that I was involved with for this website was in the area of photography. I carried multiple photoshoots over a period of approximately 4 weeks that would later be used in various areas of Graphic Mint's websites. Examples my work can be seen on their <a target="_blank" href="https://graphicmint.com">home page</a> and also on their <a target="_blank" href="https://graphicmint.com/services">Services page</a> </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                  <div class="item">
+                    <img src="img/uxacademy.PNG" class="img-fluid" data-toggle="modal" data-target="#myModal5" alt="UXAcademy.ie">
+                    <div class="carousel-caption">
+                        <h3>UXAcademy.ie</h3>
+                        <p class="lead">My Role: Development Support</p>
+                      <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#UXAModal">Read More</button>
+                    </div>
+                  </div>
+
+                  <div id="UXAModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h2 class="modal-title">UX Academy</h2>
+                          </div>
+                          <div class="modal-body">
+                            <img class="animated fadeIn" src="img/uxacademy.PNG" alt="UXAcademy.ie">
+                            <h2 class="animated fadeIn">My Role</h2>
+                            <p class="animated fadeIn">UX Academy <a target="_blank" href="https://uxacademy.ie/">(uxacademy.ie)</a> is one of four websites owned by Graphic Mint. During my internship the website received a full redesign which I was involved with. I received the new design for the website from the UI & Interaction Design team and was then tasked with developing this new design along with the UI Developer.</p> 
+                            <p class="animated fadeIn">This was a great experience as it allowed me to expand my practice of Web Development, learn and understand the process in which the design is broken down into sections and building blocks and then piecing it all together into the final build of the website. I learned a lot during this process under the supervision of Graphic Mint's UI Developer.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              
+                  <div class="item">
+                    <img src="img/dorset.PNG" class="img-fluid" alt="Dorset College">
+                    <div class="carousel-caption">
+                      <h3>Dorset College</h3>
+                      <p class="lead">My Role: Development Support & QA</p>
+                      <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#DorsetModal">Read More</button>
+                    </div>
+                  </div>
+
+                <div id="DorsetModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h2 class="modal-title">Dorset College</h2>
+                        </div>
+                        <div class="modal-body">
+                          <img class="animated fadeIn" src="img/dorset.PNG" alt="Dorsetcollege.ie">
+                          <h2 class="animated fadeIn">My Role</h2>
+                          <p class="animated fadeIn">This was a large client project that I was involved with during my internship and consisted of building a new website for Dorset College located in Dublin City. The project itself spanned across roughly 4 months of my internship and it was a great to be part of such a substantial project during my time there. It was very hands on in terms of development as it involved the utilisation of a Content Management System (CMS) called Drupal. This came with a steep learning curve and as it was something I had never used before. Once I got a better understanding of it I was delegated pieces of functionality to develop by the team's UI Developer. After developing this functionality for a set period of time I would then present my work so that it could then be tested, iterated on and then implemented into the final build of the website.</p>
+                          <p class="animated fadeIn">Other roles and responsibilities I was delegated as part of this project was working alongside Graphic Mint's content strategist to organise and prepare all of the content that was sent to us by Dorset College that would later be implemented onto the website. I was also involved with Quality Assurance and Testing the websites functionality and usability during the latter stages of development.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                      <img src="img/GraphicMintDemoReel.png" class="img-fluid" alt="Graphic Mint Demo Reel">
+                      <div class="carousel-caption">
+                        <h3>Demo Reel</h3>
+                        <p class="lead">My Role: Storyboarding & Music Production</p>
+                        <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#DemoReelModal">Read More</button>
+                      </div>
+                    </div>
+  
+                  <div id="DemoReelModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h2 class="modal-title">Demo Reel</h2>
+                          </div>
+                          <div class="modal-body">
+                            <!-- <img class="animated fadeIn" src="img/dorset.PNG" alt="Dorsetcollege.ie"> -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/7mHX1fFkfG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h2 class="animated fadeIn">My Role</h2>
+                            <p class="animated fadeIn">This was a large project undertaken by the interns during our time in Graphic Mint. The aim of the Demo Reel was to give an overview, in the form of a video, of the core service offerings of Graphic Mint across their 4 initiatives. This included their <a target="_blank" href="https://graphicmint.com/services/">UX/UI Design and Web, Branding & Customer Experience (CX)</a> services, <a target="_blank" href="https://uxacademy.ie">UXAcademy.ie</a>, <a target="_blank" href="https://usabilitytesting.ie">Usabilitytesting.ie</a> and <a target="_blank" href="https://participants.ie">Participants.ie</a>. 
+                            <p class="animated fadeIn">The process of creating the final animation video included many stages. As with all projects, it began with an initial kick-off meeting where we were briefed on the expected outcomes of the project. We then went on to brainstorming, storyboarding and prototyping with many meetings and iterations in between.</p>
+                            <p class="animated fadeIn">I was then responsible for the music production side of the project. I enjoyed this as I got to use my passion for music and also video editing to help bring Graphic Mint's demo reel to life.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+              
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+          </div>
+    </div>
+  </div>
+
+
+  <div class="container" style="margin-top: 30px;">
+    <div class="text-center">
+      <br>
+    </div>
+  </div>
+
+
+
+  <footer class="container-fluid text-center">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 col-xs-6">
+        <h3>Contact Me</h3>
+        <br>
+
+        <i class="fa fa-address-card-o" data-toggle="modal" data-target="#myModal" style="font-size:36px"></i>
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-6">
+        <h3>Connect</h3>
+
+        <a target="_blank" href="https://plus.google.com/u/0/114574973790455949391" class="fa fa-google"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/dancoxonprofile/" class="fa fa-linkedin"></a>
+
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-6">
+          <h3><a target="_blank" href="references.html">References</a></h3>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+     $(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#cartoonVideo").attr('src');
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#DemoReelModal").on('hide.bs.modal', function(){
+        $("#cartoonVideo").attr('src', '');
+    });
+    
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+    $("#DemoReelModal").on('show.bs.modal', function(){
+        $("#cartoonVideo").attr('src', url);
+    });
+});
+
+  </script>
+
+
+</body>
+
+</html>
